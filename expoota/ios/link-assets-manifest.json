@@ -1,0 +1,49 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/JosefinSans-Medium.ttf",
+      "sha1": "bd44ede64c8f0a8f786f0f6ddb8edcfc143c35e0"
+    },
+    {
+      "path": "assets/fonts/KaushanScript-Regular.ttf",
+      "sha1": "8b203c70f9c8f5d437eb5a87a6c7df39fb2996b7"
+    },
+    {
+      "path": "assets/fonts/Lato-Regular.ttf",
+      "sha1": "e923c72eda5e50a87e18ff5c71e9ef4b3b6455a3"
+    },
+    {
+      "path": "assets/fonts/NotoSerif_ExtraCondensed-Regular.ttf",
+      "sha1": "fb7399abd0f186d94d73039c3a6b9742f5b6e86e"
+    },
+    {
+      "path": "assets/fonts/Outfit-ExtraLight.ttf",
+      "sha1": "848a413a4d79c8bff066416dfa3771485d0c4ec9"
+    },
+    {
+      "path": "assets/fonts/Outfit-Regular.ttf",
+      "sha1": "7724dc42adf3e8caa9a1f7f64bc02016f201f550"
+    },
+    {
+      "path": "assets/fonts/Outfit-Thin.ttf",
+      "sha1": "09459262264acfe2f30db5fcf2de63e6115449b6"
+    },
+    {
+      "path": "assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "assets/fonts/Raleway-ExtraLight.ttf",
+      "sha1": "cc62191554e92d8bd44eedc0f1e9b7979544548d"
+    },
+    {
+      "path": "assets/fonts/Raleway-Medium.ttf",
+      "sha1": "18128ef6b5306a11f256a4f16c2fa63ab8b608d9"
+    },
+    {
+      "path": "assets/fonts/Raleway-Regular.ttf",
+      "sha1": "5a37f51d6a22ae86cc64c9085b5f64b180ad2609"
+    }
+  ]
+}
