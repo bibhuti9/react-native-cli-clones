@@ -14,9 +14,10 @@
       "@components/*": ["./components/*"],
       "@screens/*": ["./screens/*"],
       "@navigation/*": ["./navigation/*"],
-      "@assets/*": ["./assets/*"],
+      "@assets/*": ["./src/assets/*"],
       "@navigators/*": ["./src/navigators/*"],
-      "@theme": ["./src/theme"]
+      "@theme": ["./src/theme"],
+      "@utils": ["./src/utils"]
     }
   }
 }

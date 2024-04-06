@@ -46,7 +46,7 @@ const baseColors = {
   searchBg: '#9B9B9B',
 };
 
-export const darkColors = {
+export const lightColors = {
   ...baseColors,
   primary: '#8E97FD',
   secondary: '#586894',
@@ -68,10 +68,22 @@ export const darkColors = {
 
 export const Spacing = {
   s: 4 * ASPECT_RATIO,
-  m: 16 * ASPECT_RATIO,
+  md: 16 * ASPECT_RATIO,
   lg: 18 * ASPECT_RATIO,
   xl: 32 * ASPECT_RATIO,
-  xxl: 48 * ASPECT_RATIO,
+  xxl: 60 * ASPECT_RATIO,
+};
+
+export const fontSize = {
+  h1: 32 * ASPECT_RATIO,
+  h2: 24 * ASPECT_RATIO,
+  h3: 20 * ASPECT_RATIO,
+  h4: 18 * ASPECT_RATIO,
+  h5: 16 * ASPECT_RATIO,
+  h6: 14 * ASPECT_RATIO,
+  body1: 16 * ASPECT_RATIO,
+  body2: 14 * ASPECT_RATIO,
+  body3: 12 * ASPECT_RATIO,
 };
 
 export type ThemeProps = {insets: EdgeInsets};
