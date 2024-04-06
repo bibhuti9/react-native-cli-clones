@@ -1,20 +1,58 @@
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useTheme} from '@rneui/themed';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Route, screenOptions} from 'src/navigation/options';
+import {BottomTabs, Route, screenOptions} from 'src/navigation/options';
 import Home from 'src/screens/Home';
 import SleepScreen from 'src/screens/Sleep';
 import MeditateScreen from 'src/screens/Meditate';
 import MusicScreen from 'src/screens/Music';
 import UserScreen from 'src/screens/User';
 import {useStyles} from './styles';
+import Typography from 'src/components/Typography';
+import {push} from 'src/utils/navigation';
 function MyTabBar({state, descriptors, navigation}) {
-  const inset = useSafeAreaInsets();
   const {theme} = useTheme();
   const styles = useStyles();
-  return <View style={styles.container}></View>;
+  return (
+    <View style={styles.container}>
+      {state.routes.map((route, index) => {
+        const item = BottomTabs[route.name];
+        const Icon = item.icon;
+        const isFocused = state.index === index;
+        const buttonStyle = isFocused
+          ? styles.selectedIcon
+          : styles.iconContainer;
+        const iconColor = isFocused
+          ? theme?.colors?.white
+          : theme?.colors?.grey2;
+        const onPress = () => {
+          const event = navigation.emit({
+            type: 'tabPress',
+            target: route.key,
+          });
+
+          if (!isFocused && !event.defaultPrevented) {
+            push({
+              screenName: route.name,
+            });
+          }
+        };
+        return (
+          <TouchableOpacity
+            key={item.id}
+            onPress={onPress}
+            style={styles.button}>
+            <View style={buttonStyle}>
+              <Icon color={iconColor} />
+            </View>
+            <Typography style={styles.buttonText}>{item.name}</Typography>
+          </TouchableOpacity>
+        );
+      })}
+    </View>
+  );
 }
 
 const BottomStack = createBottomTabNavigator();
